@@ -1,0 +1,24 @@
+CM Moxon Rectangle
+CE
+SY width=247.9322
+SY length=92.27339
+SY gapstart=47.29435
+SY gap=10.89594
+SY radius=0.5
+SY directa=100
+SY awidth=200
+GW	1	10	gapstart+gap	-width/2	0	length	-width/2	0	radius
+GW	2	70	length	-width/2	0	length	width/2	0	radius
+GW	3	10	length	width/2	0	gapstart+gap	width/2	0	radius
+GW	4	14	gapstart	-width/2	0	0	-width/2	0	radius
+GW	5	70	0	-width/2	0	0	width/2	0	radius
+GW	6	14	0	width/2	0	gapstart	width/2	0	radius
+GW	7	70	length+directa	-awidth/2	0	length+directa	awidth/2	0	radius
+GS	0	0	0.001
+GE	0
+GN	-1
+EK
+EX	0	2	36	0	1	0	0
+FR	0	0	0	0	435	0
+RP	0	181	1	1000	-90	0	1	1		
+EN

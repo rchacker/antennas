@@ -1,0 +1,14 @@
+CM Moxon Rectangle
+CE
+SY length=140
+SY angle=110
+GW	1	20	0	0	0	length*sin(angle/2)	length*cos(angle/2)	0	0.5
+GW	0	20	0	0	0	-length*sin(angle/2)	length*cos(angle/2)	0	0.5
+GS	0	0	0.001
+GE	0
+GN	-1
+EK
+EX	0	1	0	0	1	0	0
+FR	0	0	0	0	435	0
+RP	0	181	1	1000	-90	0	1	1		
+EN
