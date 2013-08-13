@@ -1,0 +1,20 @@
+CM 
+CE
+SY Freq=435
+SY rad=0.416355
+SY lg_seg=80
+SY feed=2
+SY angle=56.16173
+SY LENGTH=166.4202
+SY EAST=LENGTH
+SY WEST=LENGTH
+GW	1	1	-feed	0	0	feed	0	0	rad
+GW	2	lg_seg	feed	0	0	EAST*sin(angle)	EAST*cos(angle)	0	rad
+GW	4	lg_seg	-feed	0	0	-WEST*sin(angle)	EAST*cos(angle)	0	rad
+GS	0	0	0.001
+GE	0
+GN	-1
+EK
+EX	0	1	1	0	1	0	0
+FR	0	0	0	0	Freq	0
+EN
