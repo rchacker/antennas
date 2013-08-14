@@ -3,12 +3,15 @@ CE
 SY Freq=433
 SY rad=0.459973
 SY lg_seg=80
-SY EAST=142.4216
-SY WEST=142.4216
-SY SOUTH=167.7076
-SY NORTH=167.7078
 SY feed=2
 SY angle=9.970029
+SY SHORT=142
+SY LSRATIO=1.176
+SY LONG=SHORT*LSRATIO
+SY EAST=SHORT
+SY WEST=SHORT
+SY SOUTH=LONG
+SY NORTH=LONG
 GW	1	1	-feed	-feed	0	feed	feed	0	rad
 GW	2	lg_seg	feed	feed	0	EAST*cos(angle)	feed	-EAST*sin(angle)	rad
 GW	3	lg_seg	feed	feed	0	feed	NORTH*cos(angle)	-NORTH*sin(angle)	rad

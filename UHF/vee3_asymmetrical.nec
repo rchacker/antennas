@@ -10,6 +10,7 @@ SY angle=56.52592
 GW	1	1	-feed	0	0	feed	0	0	rad
 GW	2	lg_seg	feed	0	0	EAST*sin(angle)	EAST*cos(angle)	0	rad
 GW	4	lg_seg	-feed	0	0	-WEST*sin(angle)	EAST*cos(angle)	0	rad
+GW	5	1	-feed	0	0	-feed	-feed	0	rad
 GS	0	0	0.001
 GE	0
 GN	-1

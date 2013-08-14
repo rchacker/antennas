@@ -1,10 +1,10 @@
 CM Moxon Rectangle
 CE
-SY width=238.2835
-SY length=88.7128
-SY gapstart=47.90824
-SY gap=10.25936
-SY radius=2
+SY width=248.3	'A
+SY length=91.9	'E
+SY gapstart=47.5	'D
+SY gap=10.6	'C
+SY radius=.45	'wire size in generator is diameter
 GW	1	10	gapstart+gap	-width/2	0	length	-width/2	0	radius
 GW	2	70	length	-width/2	0	length	width/2	0	radius
 GW	3	10	length	width/2	0	gapstart+gap	width/2	0	radius

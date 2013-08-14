@@ -4,7 +4,7 @@ SY width=44	'44
 SY length=16.3	'16.3
 SY gapstart=8.4	'8.4
 SY gap=2	'2
-SY radius=.45	'ideally .1
+SY radius=.1	'ideally .1
 GW	1	5	gapstart+gap	-width/2	0	length	-width/2	0	radius
 GW	2	35	length	-width/2	0	length	width/2	0	radius
 GW	3	5	length	width/2	0	gapstart+gap	width/2	0	radius
