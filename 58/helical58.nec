@@ -6,12 +6,12 @@ CM Y sections = 20
 CM Rotate X, Y, Z = 0, 0, 0
 CM Move X, Y, Z = 0, 0, 0
 CE
-SY spacing = 18
-SY turns=5
-SY coilwidth=20
-SY base=-2.56096
+SY spacing=16.36134
+SY turns=2.948963
+SY coilwidth=18.6843
+SY base=-2.43846
 SY radius = .2
-SY match=2.979197
+SY match=2.543137
 SY match_N=match
 SY match_S=match
 SY match_W=match
