@@ -7,19 +7,14 @@ CM Rotate X, Y, Z = 0, 0, 0
 CM Move X, Y, Z = 0, 0, 0
 CE
 SY spacing=16.36134
-SY turns=2.948963
+SY turns=5
 SY coilwidth=18.6843
-SY base=-2.43846
+SY base=-1.94969
 SY radius = .2
-SY match=2.543137
-SY match_N=match
-SY match_S=match
-SY match_W=match
-SY radius_copper=1.175816
+SY match_S=5.468072
+SY radius_copper=0.87
 GW	2001	1	0	0	0	0	0	base	radius_copper	'feed
 GW	2000	2	coilwidth/2	0	0	0	0	0	radius_copper
-GW	2002	2	0	match_N	0	0	0	0	radius_copper
-GW	2003	2	-match_W	0	0	0	0	0	radius_copper
 GW	2004	2	0	-match_S	0	0	0	0	radius_copper
 GH	1000	turns*14	spacing	spacing*turns	coilwidth/2	coilwidth/2	coilwidth/2	coilwidth/2	radius_copper
 GW	1	1	-30.0	-25.0	base	-30.0	-22.5	base	radius
