@@ -6,12 +6,12 @@ CM Y sections = 20
 CM Rotate X, Y, Z = 0, 0, 0
 CM Move X, Y, Z = 0, 0, 0
 CE
-SY spacing=16.36134
-SY turns=5
-SY coilwidth=18.6843
-SY base=-1.94969
+SY spacing=16.28696
+SY turns=4.908194
+SY coilwidth=18.7842
+SY base=-1.94799
 SY radius = .2
-SY match_S=5.468072
+SY match_S=5.440875
 SY radius_copper=0.87
 GW	2001	1	0	0	0	0	0	base	radius_copper	'feed
 GW	2000	2	coilwidth/2	0	0	0	0	0	radius_copper
