@@ -8,3 +8,5 @@ UHF/opt/*
 *.ref
 
 */opt/*
+
+.DS_Store

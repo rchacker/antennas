@@ -1,0 +1,92 @@
+CM   Installed FPV Antenna
+CM 
+CE
+SY Space=120	'Spacing
+SY Leg=60	'Leg Length
+SY AL=100	'Arc Length
+SY Pitch=50	'Pitch Angle
+SY A=90	'Arc Angle
+SY Feed=7	'Feed Length to Center Coax
+SY G=Leg+Feed
+SY C=2*G*SIN(A/2)	'Cord Length
+SY R=AL*(10.991*(C/AL)*(C/AL)*(C/AL) - 21.818*(C/AL)*(C/AL) + 15.021*(C/AL) - 3.2387)	'Leg Length
+SY WR=0.3	'Wire Radius
+SY AC=SQR(ABS((G*G)-(C/2)*(C/2)))	'Distance from A to Chord Center
+SY OE=SQR(ABS((R*R)-(C/2)*(C/2)))	'Apothem - Distance from Cord to R start
+SY RX=(AC-OE)*(COS(A/2))	'Center Radius  X
+SY RY=(AC-OE)*(SIN(A/2))	'Center Radius  Y
+SY RAstart=-ATN(RY/(G-RX))	'Start Angle for Radius Arc
+SY RAend=RAstart + (360*AL)/(2*PI*R)	'End Angle for Radius Arc
+SY RAstep=(RAend-RAstart)/20	'Step size based on 20 segments
+SY X1=R*COS(RAstart + RAstep) + RX
+SY X2=R*COS(RAstart + RAstep*2) + RX
+SY X3=R*COS(RAstart + RAstep*3) + RX
+SY X4=R*COS(RAstart + RAstep*4) + RX
+SY X5=R*COS(RAstart + RAstep*5) + RX
+SY X6=R*COS(RAstart + RAstep*6) + RX
+SY X7=R*COS(RAstart + RAstep*7) + RX
+SY X8=R*COS(RAstart + RAstep*8) + RX
+SY X9=R*COS(RAstart + RAstep*9) + RX
+SY X10=R*COS(RAstart + RAstep*10) + RX
+SY X11=R*COS(RAstart + RAstep*11) + RX
+SY X12=R*COS(RAstart + RAstep*12) + RX
+SY X13=R*COS(RAstart + RAstep*13) + RX
+SY X14=R*COS(RAstart + RAstep*14) + RX
+SY X15=R*COS(RAstart + RAstep*15) + RX
+SY X16=R*COS(RAstart + RAstep*16) + RX
+SY X17=R*COS(RAstart + RAstep*17) + RX
+SY X18=R*COS(RAstart + RAstep*18) + RX
+SY X19=R*COS(RAstart + RAstep*19) + RX
+SY X20=R*COS(RAstart + RAstep*20) + RX
+SY Y1=R*SIN(RAstart + RAstep) + RY
+SY Y2=R*SIN(RAstart + RAstep*2) + RY
+SY Y3=R*SIN(RAstart + RAstep*3) + RY
+SY Y4=R*SIN(RAstart + RAstep*4) + RY
+SY Y5=R*SIN(RAstart + RAstep*5) + RY
+SY Y6=R*SIN(RAstart + RAstep*6) + RY
+SY Y7=R*SIN(RAstart + RAstep*7) + RY
+SY Y8=R*SIN(RAstart + RAstep*8) + RY
+SY Y9=R*SIN(RAstart + RAstep*9) + RY
+SY Y10=R*SIN(RAstart + RAstep*10) + RY
+SY Y11=R*SIN(RAstart + RAstep*11) + RY
+SY Y12=R*SIN(RAstart + RAstep*12) + RY
+SY Y13=R*SIN(RAstart + RAstep*13) + RY
+SY Y14=R*SIN(RAstart + RAstep*14) + RY
+SY Y15=R*SIN(RAstart + RAstep*15) + RY
+SY Y16=R*SIN(RAstart + RAstep*16) + RY
+SY Y17=R*SIN(RAstart + RAstep*17) + RY
+SY Y18=R*SIN(RAstart + RAstep*18) + RY
+SY Y19=R*SIN(RAstart + RAstep*19) + RY
+SY Y20=R*SIN(RAstart + RAstep*20) + RY
+GW	100	12	0	0	0	G	0	0	WR
+GW	201	2	G	0	0	X1	Y1*cos(Pitch)	Y1*sin(Pitch)	WR
+GW	202	2	X1	Y1*cos(Pitch)	Y1*sin(Pitch)	X2	Y2*cos(Pitch)	Y2*sin(Pitch)	WR
+GW	203	2	X2	Y2*cos(Pitch)	Y2*sin(Pitch)	X3	Y3*cos(Pitch)	Y3*sin(Pitch)	WR
+GW	204	2	X3	Y3*cos(Pitch)	Y3*sin(Pitch)	X4	Y4*cos(Pitch)	Y4*sin(Pitch)	WR
+GW	205	2	X4	Y4*cos(Pitch)	Y4*sin(Pitch)	X5	Y5*cos(Pitch)	Y5*sin(Pitch)	WR
+GW	206	2	X5	Y5*cos(Pitch)	Y5*sin(Pitch)	X6	Y6*cos(Pitch)	Y6*sin(Pitch)	WR
+GW	207	2	X6	Y6*cos(Pitch)	Y6*sin(Pitch)	X7	Y7*cos(Pitch)	Y7*sin(Pitch)	WR
+GW	208	2	X7	Y7*cos(Pitch)	Y7*sin(Pitch)	X8	Y8*cos(Pitch)	Y8*sin(Pitch)	WR
+GW	209	2	X8	Y8*cos(Pitch)	Y8*sin(Pitch)	X9	Y9*cos(Pitch)	Y9*sin(Pitch)	WR
+GW	210	2	X9	Y9*cos(Pitch)	Y9*sin(Pitch)	X10	Y10*cos(Pitch)	Y10*sin(Pitch)	WR
+GW	211	2	X10	Y10*cos(Pitch)	Y10*sin(Pitch)	X11	Y11*cos(Pitch)	Y11*sin(Pitch)	WR
+GW	212	2	X11	Y11*cos(Pitch)	Y11*sin(Pitch)	X12	Y12*cos(Pitch)	Y12*sin(Pitch)	WR
+GW	213	2	X12	Y12*cos(Pitch)	Y12*sin(Pitch)	X13	Y13*cos(Pitch)	Y13*sin(Pitch)	WR
+GW	214	2	X13	Y13*cos(Pitch)	Y13*sin(Pitch)	X14	Y14*cos(Pitch)	Y14*sin(Pitch)	WR
+GW	215	2	X14	Y14*cos(Pitch)	Y14*sin(Pitch)	X15	Y15*cos(Pitch)	Y15*sin(Pitch)	WR
+GW	216	2	X15	Y15*cos(Pitch)	Y15*sin(Pitch)	X16	Y16*cos(Pitch)	Y16*sin(Pitch)	WR
+GW	217	2	X16	Y16*cos(Pitch)	Y16*sin(Pitch)	X17	Y17*cos(Pitch)	Y17*sin(Pitch)	WR
+GW	218	2	X17	Y17*cos(Pitch)	Y17*sin(Pitch)	X18	Y18*cos(Pitch)	Y18*sin(Pitch)	WR
+GW	219	2	X18	Y18*cos(Pitch)	Y18*sin(Pitch)	X19	Y19*cos(Pitch)	Y19*sin(Pitch)	WR
+GW	220	2	X19	Y19*cos(Pitch)	Y19*sin(Pitch)	X20	Y20*cos(Pitch)	Y20*sin(Pitch)	WR
+GW	250	12	X20	Y20*cos(Pitch)	Y20*sin(Pitch)	0	0	Feed	WR
+GM	401	3	0	0	90	0	0	0	100
+GW	800	1	0	0	0	0	0	Feed	WR
+GS	0	0	0.001
+GE	0
+GN	-1
+EK
+EX	0	800	1	0	1	0	0	
+FR	0	0	0	0	1280	0
+RP	0	73	73	1001	-90	0	5	5		
+EN
