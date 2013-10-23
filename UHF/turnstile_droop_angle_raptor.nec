@@ -17,7 +17,10 @@ GW	2	lg_seg	feed	feed	0	EAST*cos(angle)	feed	-EAST*sin(angle)	rad
 GW	3	lg_seg	feed	feed	0	feed	NORTH*cos(angle)	-NORTH*sin(angle)	rad
 GW	4	lg_seg	-feed	-feed	0	-WEST*cos(angle)	-feed	-WEST*sin(angle)	rad
 GW	5	lg_seg	-feed	-feed	0	-feed	-SOUTH*cos(angle)	-SOUTH*sin(angle)	rad
-GW	6	lg_seg	feed	feed	0	feed	feed	600	rad
+GW	6	lg_seg	feed	feed	0	feed	feed	120	rad
+GW	7	lg_seg	feed	feed	120	feed	-140	180	rad
+GW	8	lg_seg	feed	-140	180	feed	-140	400	rad
+GW	9	lg_seg	feed	-145	60	feed	-145	400	rad
 GS	0	0	0.001
 GE	0
 GN	-1

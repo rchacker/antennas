@@ -1,0 +1,26 @@
+CM 
+CE
+SY Freq=2440
+SY rad=0.15
+SY lg_seg=25
+SY LONG=29.48379
+SY SHORT=25.15218
+SY EAST=SHORT
+SY WEST=SHORT
+SY SOUTH=LONG
+SY NORTH=LONG
+SY feed=1
+SY COAX=100
+GW	1	1	0	0	0	0	0	feed	rad
+GW	2	lg_seg	0	0	0	EAST	0	0	rad
+GW	3	lg_seg	0	0	0	0	NORTH	0	rad
+GW	4	lg_seg	0	0	feed	-WEST	0	feed	rad
+GW	5	lg_seg	0	0	feed	0	-SOUTH	feed	rad
+GW	6	lg_seg*4	0	0	0	0	0	-COAX	rad
+GS	0	0	0.001
+GE	0
+GN	-1
+EK
+EX	0	1	1	0	1	0	0
+FR	0	0	0	0	Freq	0
+EN

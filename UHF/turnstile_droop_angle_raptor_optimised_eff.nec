@@ -1,0 +1,39 @@
+CM 
+CE
+SY Freq=433
+SY rad=0.459973
+SY lg_seg=80
+SY feed=2
+SY angle=9.965401
+SY SHORT=170.561
+SY LSRATIO=1.559022
+SY LONG=SHORT*LSRATIO
+SY EAST=SHORT
+SY WEST=SHORT
+SY SOUTH=LONG
+SY NORTH=LONG
+SY top_of_fin=140
+SY height_of_fin=170
+SY fin_slope=270
+SY boom_run=290
+SY final_control_rod=280
+SY rod_gap=20
+GW	1	1	-feed	-feed	0	feed	feed	0	rad
+GW	2	lg_seg	feed	feed	0	EAST*cos(angle)	feed	-EAST*sin(angle)	rad
+GW	3	lg_seg	feed	feed	0	feed	NORTH*cos(angle)	-NORTH*sin(angle)	rad
+GW	4	lg_seg	-feed	-feed	0	-WEST*cos(angle)	-feed	-WEST*sin(angle)	rad
+GW	5	lg_seg	-feed	-feed	0	-feed	-SOUTH*cos(angle)	-SOUTH*sin(angle)	rad
+GW	6	lg_seg	feed	feed	0	feed	feed	top_of_fin	rad
+GW	7	lg_seg	feed	feed	top_of_fin	feed	-height_of_fin	top_of_fin+fin_slope	rad
+GW	8	lg_seg	feed	-height_of_fin	top_of_fin+fin_slope	feed	-height_of_fin	top_of_fin+fin_slope+boom_run	rad
+GW	9	lg_seg	feed	-height_of_fin-rod_gap	top_of_fin+fin_slope	feed	-height_of_fin-rod_gap	top_of_fin+fin_slope+boom_run	rad
+GW	10	lg_seg	feed	-height_of_fin-rod_gap	top_of_fin+fin_slope-final_control_rod	feed	-height_of_fin-rod_gap	top_of_fin+fin_slope	rad
+GW	10	lg_seg	feed-rod_gap	-height_of_fin-rod_gap	top_of_fin+fin_slope-final_control_rod	feed-rod_gap	-height_of_fin-rod_gap	top_of_fin+fin_slope	rad
+GW	9	lg_seg	feed-rod_gap	-height_of_fin-rod_gap	top_of_fin+fin_slope	feed-rod_gap	-height_of_fin-rod_gap	top_of_fin+fin_slope+boom_run	rad
+GS	0	0	0.001
+GE	0
+GN	-1
+EK
+EX	0	1	1	0	1	0	0
+FR	0	0	0	0	Freq	0
+EN
