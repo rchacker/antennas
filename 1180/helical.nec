@@ -1,5 +1,22 @@
+CM 
 CE
+SY coilspacing=0.25954	'.245
+SY coildiameter=0.439422	'.305
+SY turns=5.566765	'5
+SY rad=0.012616
+SY segsperturn=30
+SY loopoffset=0.023683
+SY taper=0.926919
+SY diff=9.99e-4
+SY loopdiameter=coildiameter+6*rad+sqr(diff*diff)	'0.392916
+GH	1	turns*segsperturn	coilspacing	coilspacing*turns	coildiameter/2	coildiameter/2	coildiameter/2*taper	coildiameter/2*taper	rad
+GA	2	segsperturn	loopdiameter/2	0	360	rad
+GM	3	0	90	0	0	0	0	loopoffset	2
+GW	4	1	loopdiameter/2	0	loopoffset	coildiameter/2	0	0	rad
+GS	0	0	0.254068
 GE	0
-EK
 GN	-1
-FR	0	1	0	0	1180	0
+EK
+EX	0	4	1	0	0	0	0
+FR	0	0	0	0	1180	0
+EN
