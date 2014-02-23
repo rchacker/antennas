@@ -1,0 +1,26 @@
+CM 
+CE
+SY Freq=433
+SY rad=0.459973
+SY lg_seg=80
+SY feed=2
+SY angle=9.970029
+SY SHORT=142.2684
+SY LSRATIO=1.178113
+SY LONG=SHORT*LSRATIO
+SY EAST=SHORT
+SY WEST=SHORT
+SY SOUTH=LONG
+SY NORTH=LONG
+GW	1	1	-feed	-feed	0	feed	feed	0	rad
+GW	2	lg_seg	feed	feed	0	EAST*cos(angle)	feed	-EAST*sin(angle)	rad
+GW	3	lg_seg	feed	feed	0	feed	NORTH*cos(angle)	-NORTH*sin(angle)	rad
+GW	4	lg_seg	-feed	-feed	0	-WEST*cos(angle)	-feed	-WEST*sin(angle)	rad
+GW	5	lg_seg	-feed	-feed	0	-feed	-SOUTH*cos(angle)	-SOUTH*sin(angle)	rad
+GS	0	0	0.001
+GE	0
+GN	-1
+EK
+EX	0	1	1	0	1	0	0
+FR	0	0	0	0	Freq	0
+EN

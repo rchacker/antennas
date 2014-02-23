@@ -1,0 +1,27 @@
+CM 144 MHz Single Turnstile Antenna at 1.0 lambda NEC model by Carol F. Milazzo, KP4MD
+CM Horizontal orientation
+CM Frequency = 145.000 MHz
+CM 21 segments per dipole
+CM Simulated good ground
+CM http://www.qsl.net/kp4md/omnihoriz.htm
+CE
+SY frq=145	'Input frequency MHz
+SY len=39.815	'Input dipole length inches
+SY dia=0.25	'Input dipole dia. inches
+SY rad=0.5*dia	'Calculate dipole radius
+SY n=21	'Input segments per dipole (must be odd)
+SY nc=0.5*(n+1)	'Calculate feed point segment
+SY h=40.87	'Input height inches to 0.5 lambda
+SY s=0.25	'Input separation between each dipole in pair inches
+GW	1	n	0	-len/2	h*2	0	len/2	h*2	rad	'First dipole at 1.0 lambda
+GM	1	1	0	0	90	0	0	s	1	'Rotate to form second dipole at right angle
+GS	0	0	0.0254
+GE	0
+LD	5	0	0	0	58000000	'0.25 inch copper tubing
+GN	-1
+EK
+EX	0	1	nc	0	0	1	0	'Feed point
+EX	0	2	nc	0	-1	0	0	'Feed point
+FR	0	0	0	0	frq	0
+RP	0	1	361	1000	76.	0.	0.	1.	0.	
+EN

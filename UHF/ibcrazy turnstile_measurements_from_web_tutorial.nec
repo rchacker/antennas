@@ -1,0 +1,20 @@
+CM 
+CE
+SY w1seg=15, w1x1=0.06, w1z1=0, w1x2=0.070003, w1y2=0.054065, w1rad=0.015981
+SY w2seg=1, w2x2=5.85, w2y2=0.041876
+SY w3x2=0.04756, w3y2=6.754027
+SY w4x2=0.047616, w4y2=6.759988
+SY w5x2=5.85, w5y2=0.042301
+SY Freq=433
+GW	1	w1seg	-w1x1	-w1x1	w1z1	w1x2	w1y2	w1z1	w1rad
+GW	2	w2seg	w1x2	w1y2	w1z1	w2x2	w2y2	w1z1	w1rad
+GW	3	w2seg	w1x2	w1y2	w1z1	w3x2	w3y2	w1z1	w1rad
+GW	4	w2seg	-w1x1	-w1x1	w1z1	-w4x2	-w4y2	w1z1	w1rad
+GW	5	w2seg	-w1x1	-w1x1	w1z1	-w5x2	-w5y2	w1z1	w1rad
+GS	0	0	0.0254
+GE	0
+GN	-1
+EK
+EX	0	1	8	0	1	0	0	0
+FR	0	0	0	0	Freq	0
+EN

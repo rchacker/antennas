@@ -1,0 +1,24 @@
+CM 
+CE
+SY Freq=435
+SY rad=0.416429
+SY lg_seg=80
+SY EAST=149.84
+SY WEST=154.343
+SY feed=2
+SY angleE=82.11942
+SY coax=310
+SY angleW=90
+SY phiE=34.81472
+SY phiW=14.37243
+GW	1	1	-feed	0	0	feed	0	0	rad
+GW	2	lg_seg	feed	0	0	EAST*sin(angleE)	EAST*cos(angleE)*cos(phiE)	EAST*sin(phiE)	rad
+GW	4	lg_seg	-feed	0	0	-WEST*sin(angleW)	WEST*cos(angleW)*cos(phiW)	WEST*sin(phiW)	rad
+GW	5	lg_seg	-feed	0	0	-feed	-coax	0	rad
+GS	0	0	0.001
+GE	0
+GN	-1
+EK
+EX	0	1	1	0	1	0	0
+FR	0	0	0	0	Freq	0
+EN
