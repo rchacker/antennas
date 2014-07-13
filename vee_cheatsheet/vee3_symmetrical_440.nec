@@ -1,11 +1,11 @@
 CM 
 CE
-SY Freq=1080
-SY rad=0.25
+SY Freq=440
+SY rad=0.44
 SY lg_seg=80
-SY feed=1
-SY angle=52.69426
-SY LENGTH=61.12371
+SY feed=2
+SY angle=51.75046
+SY LENGTH=165.1399
 SY EAST=LENGTH
 SY WEST=LENGTH
 GW	1	1	-feed	0	0	feed	0	0	rad

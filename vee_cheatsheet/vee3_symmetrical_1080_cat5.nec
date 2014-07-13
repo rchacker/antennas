@@ -4,8 +4,8 @@ SY Freq=1080
 SY rad=0.25
 SY lg_seg=80
 SY feed=1
-SY angle=52.69426
-SY LENGTH=61.12371
+SY angle=52.18469
+SY LENGTH=67.00431
 SY EAST=LENGTH
 SY WEST=LENGTH
 GW	1	1	-feed	0	0	feed	0	0	rad
