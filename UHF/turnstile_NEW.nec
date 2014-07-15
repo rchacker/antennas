@@ -1,13 +1,13 @@
 CM 
 CE
 SY Freq=433
-SY rad=.44
+SY rad=.88
 SY lg_seg=60
 SY short=150
 SY long=170
 SY SOUTH=long
 SY NORTH=long
-SY feed=1
+SY feed=2
 SY EAST=short
 SY WEST=short
 GW	1	1	-feed	-feed	0	feed	feed	0	rad
@@ -15,7 +15,6 @@ GW	2	lg_seg	feed	feed	0	EAST	feed	0	rad
 GW	3	lg_seg	feed	feed	0	feed	NORTH	0	rad
 GW	4	lg_seg	-feed	-feed	0	-WEST	-feed	0	rad
 GW	5	lg_seg	-feed	-feed	0	-feed	-SOUTH	0	rad
-GW	6	lg_seg*2	feed	feed	0	feed	feed	NORTH*1.5	rad
 GS	0	0	0.001
 GE	0
 GN	-1
